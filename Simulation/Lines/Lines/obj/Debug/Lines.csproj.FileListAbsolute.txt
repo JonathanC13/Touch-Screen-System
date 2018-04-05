@@ -1,0 +1,11 @@
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\bin\Debug\Lines.exe.config
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\bin\Debug\Lines.exe
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\bin\Debug\Lines.pdb
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\obj\Debug\Lines.csprojResolveAssemblyReference.cache
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\obj\Debug\Lines.Form1.resources
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\obj\Debug\Lines.Properties.Resources.resources
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\obj\Debug\Lines.csproj.GenerateResource.Cache
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\obj\Debug\Lines.exe
+c:\users\jonathan\documents\visual studio 2013\Projects\Lines\Lines\obj\Debug\Lines.pdb
+C:\Users\Jonathan\documents\visual studio 2013\Projects\Lines\Lines\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Jonathan\documents\visual studio 2013\Projects\Lines\Lines\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
