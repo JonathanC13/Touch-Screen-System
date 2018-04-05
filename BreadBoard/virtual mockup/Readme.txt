@@ -1,0 +1,1 @@
+These images are just a virtual mockup for the loose organization of the circuits.
