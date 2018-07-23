@@ -1,0 +1,432 @@
+
+pi@rpi_back:~/fourth $ ./006_TS_Multicast 
+main[Tue Nov 28 05:19:22 2017]: default config file './data/cfg.txt' is used.
+
+main[Tue Nov 28 05:19:22 2017]: name=test_pf2.	tok_cfg_store[0].text = 1,		tok_cfg_store[0].value = 1.
+main[Tue Nov 28 05:19:22 2017]: name=num_pf2.	tok_cfg_store[1].text = 1,		tok_cfg_store[1].value = 1.
+main[Tue Nov 28 05:19:22 2017]: name=num_sensor_used.	tok_cfg_store[2].text = 8,		tok_cfg_store[2].value = 8.
+main[Tue Nov 28 05:19:22 2017]: name=num_emitter_used.	tok_cfg_store[3].text = 8,		tok_cfg_store[3].value = 8.
+main[Tue Nov 28 05:19:22 2017]: name=emitter_on_msec.	tok_cfg_store[4].text = 100,		tok_cfg_store[4].value = 100.
+main[Tue Nov 28 05:19:22 2017]: name=blink_period_nsec.	tok_cfg_store[5].text = 1000000,		tok_cfg_store[5].value = 1000000.
+main[Tue Nov 28 05:19:22 2017]: name=blink_led_flag.	tok_cfg_store[6].text = 0,		tok_cfg_store[6].value = 0.
+main[Tue Nov 28 05:19:22 2017]: name=emit_sensor_distance_mm.	tok_cfg_store[7].text = 1000,		tok_cfg_store[7].value = 1000.
+main[Tue Nov 28 05:19:22 2017]: name=dev_dev_distance_mm.	tok_cfg_store[8].text = 5,		tok_cfg_store[8].value = 5.
+main[Tue Nov 28 05:19:22 2017]: name=mcast_ip_addr.	tok_cfg_store[9].text = 224.0.0.1,		tok_cfg_store[9].value = 224.
+main[Tue Nov 28 05:19:22 2017]: name=mcast_ip_port.	tok_cfg_store[10].text = 16789,		tok_cfg_store[10].value = 16789.
+
+main[Tue Nov 28 05:19:22 2017]: setup Signal to handle Ctrl-C.
+main[Tue Nov 28 05:19:22 2017]: Test pifacedigital2 with address 0.
+
+
+pfd2_test[Tue Nov 28 05:19:22 2017]: --- Opening Piface Digital 2 Connection. ---
+pfd2_test[Tue Nov 28 05:19:22 2017]: IOHW #0. Opening piface digital connection.
+
+pfd2_test[Tue Nov 28 05:19:22 2017]: --- Enable Piface Digital 2 Interrupt. ---
+pfd2_test[Tue Nov 28 05:19:22 2017]: IOHW #0. Interrupts enabled. Total_try=1
+
+pfd2_test[Tue Nov 28 05:19:22 2017]: --- Output in Alternate Pattern. ---
+pfd2_test[Tue Nov 28 05:19:22 2017]: IOHW #0. Setting all outputs off.
+pfd2_test[Tue Nov 28 05:19:23 2017]: IOHW #0. Setting outputs to 10101010
+pfd2_test[Tue Nov 28 05:19:24 2017]: IOHW #0. Setting outputs to 01010101
+pfd2_test[Tue Nov 28 05:19:25 2017]: IOHW #0. Setting all outputs off
+
+pfd2_test[Tue Nov 28 05:19:25 2017]: --- Short to High (Cross Connect) Testing - Walking '1' on OUTPUT Reg. ---
+pfd2_test[Tue Nov 28 05:19:25 2017]: IOHW #0. Writing bit value 1 to bit number 0 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:25 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:25 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:25 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:25 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:25 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:25 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:25 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:25 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:25 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:26 2017]: IOHW #0. Writing bit value 0 to bit number 0 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:26 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:26 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:26 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:26 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:26 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:26 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:26 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:26 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:26 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+
+pfd2_test[Tue Nov 28 05:19:27 2017]: IOHW #0. Writing bit value 1 to bit number 1 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:27 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:28 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:28 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:28 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:28 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:28 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:28 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:28 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:28 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:29 2017]: IOHW #0. Writing bit value 0 to bit number 1 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:29 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:29 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:29 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:29 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:29 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:29 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:29 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:29 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:29 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+
+pfd2_test[Tue Nov 28 05:19:30 2017]: IOHW #0. Writing bit value 1 to bit number 2 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:30 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:30 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:30 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:30 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:30 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:30 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:30 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:30 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:30 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:31 2017]: IOHW #0. Writing bit value 0 to bit number 2 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:31 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:31 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:31 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:31 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:31 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:31 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:31 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:31 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:31 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+
+pfd2_test[Tue Nov 28 05:19:32 2017]: IOHW #0. Writing bit value 1 to bit number 3 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:32 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:32 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:32 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:32 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:32 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:32 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:32 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:32 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:32 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:33 2017]: IOHW #0. Writing bit value 0 to bit number 3 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:33 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:33 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:33 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:33 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:33 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:33 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:33 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:33 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:33 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+
+pfd2_test[Tue Nov 28 05:19:34 2017]: IOHW #0. Writing bit value 1 to bit number 4 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:34 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:34 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:34 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:34 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:34 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:34 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:34 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:34 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:34 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:35 2017]: IOHW #0. Writing bit value 0 to bit number 4 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:35 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:35 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:35 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:35 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:35 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:35 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:35 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:35 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:35 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+
+pfd2_test[Tue Nov 28 05:19:36 2017]: IOHW #0. Writing bit value 1 to bit number 5 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:36 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:36 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:36 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:36 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:36 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:36 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:36 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:36 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:36 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:37 2017]: IOHW #0. Writing bit value 0 to bit number 5 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:37 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:37 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:37 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:37 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:37 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:37 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:37 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:37 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:37 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+
+pfd2_test[Tue Nov 28 05:19:38 2017]: IOHW #0. Writing bit value 1 to bit number 6 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:38 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:38 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:38 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:38 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:38 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:38 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:38 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:38 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:38 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:39 2017]: IOHW #0. Writing bit value 0 to bit number 6 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:39 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:39 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:39 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:39 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:39 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:39 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:39 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:39 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:39 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+
+pfd2_test[Tue Nov 28 05:19:40 2017]: IOHW #0. Writing bit value 1 to bit number 7 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:40 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:40 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:40 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:40 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:40 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:40 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:40 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:40 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:40 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:41 2017]: IOHW #0. Writing bit value 0 to bit number 7 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:41 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:41 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:41 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:41 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:41 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:41 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:41 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:41 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:41 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+
+pfd2_test[Tue Nov 28 05:19:42 2017]: IOHW #0. Setting all outputs ON
+
+pfd2_test[Tue Nov 28 05:19:42 2017]: --- Short to Low (Cross Connect) Testing - Walking '1' on OUTPUT Reg. ---
+pfd2_test[Tue Nov 28 05:19:42 2017]: IOHW #0. Writing bit value 0 to bit number 0 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:42 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:42 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:42 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:42 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:42 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:42 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:42 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:42 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:42 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:43 2017]: IOHW #0. Writing bit value 1 to bit number 0 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:43 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:43 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:43 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:43 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:43 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:43 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:43 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:43 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:43 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+
+pfd2_test[Tue Nov 28 05:19:44 2017]: IOHW #0. Writing bit value 0 to bit number 1 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:44 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:44 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:44 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:44 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:44 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:44 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:44 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:44 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:44 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:45 2017]: IOHW #0. Writing bit value 1 to bit number 1 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:45 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:45 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:45 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:45 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:45 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:45 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:45 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:45 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:45 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+
+pfd2_test[Tue Nov 28 05:19:46 2017]: IOHW #0. Writing bit value 0 to bit number 2 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:46 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:46 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:46 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:46 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:46 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:46 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:46 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:46 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:46 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:47 2017]: IOHW #0. Writing bit value 1 to bit number 2 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:47 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:47 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:47 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:47 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:47 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:47 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:47 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:47 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:47 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+
+pfd2_test[Tue Nov 28 05:19:48 2017]: IOHW #0. Writing bit value 0 to bit number 3 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:48 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:48 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:48 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:48 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:48 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:48 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:48 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:48 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:48 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:49 2017]: IOHW #0. Writing bit value 1 to bit number 3 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:49 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:49 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:49 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:49 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:49 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:49 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:49 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:49 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:49 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+
+pfd2_test[Tue Nov 28 05:19:50 2017]: IOHW #0. Writing bit value 0 to bit number 4 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:50 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:50 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:50 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:50 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:50 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:50 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:50 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:50 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:50 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:51 2017]: IOHW #0. Writing bit value 1 to bit number 4 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:51 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:51 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:51 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:51 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:51 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:51 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:51 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:51 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:51 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+
+pfd2_test[Tue Nov 28 05:19:52 2017]: IOHW #0. Writing bit value 0 to bit number 5 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:52 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:52 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:52 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:52 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:52 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:52 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:52 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:52 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:52 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:53 2017]: IOHW #0. Writing bit value 1 to bit number 5 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:53 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:53 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:53 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:53 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:53 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:53 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:53 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:53 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:53 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+
+pfd2_test[Tue Nov 28 05:19:54 2017]: IOHW #0. Writing bit value 0 to bit number 6 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:54 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:54 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:54 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:54 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:54 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:54 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:54 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:54 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:54 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:55 2017]: IOHW #0. Writing bit value 1 to bit number 6 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:55 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:55 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:55 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:55 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:55 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:55 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:55 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:55 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:55 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+
+pfd2_test[Tue Nov 28 05:19:56 2017]: IOHW #0. Writing bit value 0 to bit number 7 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:56 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:56 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:56 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:56 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:56 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:56 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:56 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:56 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:56 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 0
+pfd2_test[Tue Nov 28 05:19:57 2017]: IOHW #0. Writing bit value 1 to bit number 7 of OUTPUT Reg (18).
+pfd2_test[Tue Nov 28 05:19:57 2017]: IOHW #0. Reading OUTPUT Reg (18) Bits.
+pfd2_test[Tue Nov 28 05:19:57 2017]: ...IOHW #0. Reading bit number 0 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:57 2017]: ...IOHW #0. Reading bit number 1 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:57 2017]: ...IOHW #0. Reading bit number 2 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:57 2017]: ...IOHW #0. Reading bit number 3 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:57 2017]: ...IOHW #0. Reading bit number 4 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:57 2017]: ...IOHW #0. Reading bit number 5 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:57 2017]: ...IOHW #0. Reading bit number 6 of OUTPUT Reg (18). Bit value is 1
+pfd2_test[Tue Nov 28 05:19:57 2017]: ...IOHW #0. Reading bit number 7 of OUTPUT Reg (18). Bit value is 1
+
+
+pfd2_test[Tue Nov 28 05:19:58 2017]: --- Read INPUT Register. ---
+pfd2_test[Tue Nov 28 05:19:58 2017]: IOHW #0. Inputs: 0xff
+
+pfd2_test[Tue Nov 28 05:19:58 2017]: --- Write OUTPUT Register. ---
+pfd2_test[Tue Nov 28 05:19:58 2017]: IOHW #0. Setting output pin with attached relay 0 HIGH
+pfd2_test[Tue Nov 28 05:19:59 2017]: IOHW #0. Setting output pin with attached relay 0 LOW
+
+pfd2_test[Tue Nov 28 05:20:00 2017]: IOHW #0. Setting output pin with attached relay 1 HIGH
+pfd2_test[Tue Nov 28 05:20:01 2017]: IOHW #0. Setting output pin with attached relay 1 LOW
+
+pfd2_test[Tue Nov 28 05:20:02 2017]: IOHW #0. Setting output pin 2 HIGH
+pfd2_test[Tue Nov 28 05:20:03 2017]: IOHW #0. Setting output pin 2 LOW
+
+pfd2_test[Tue Nov 28 05:20:04 2017]: IOHW #0. Setting output pin 3 HIGH
+pfd2_test[Tue Nov 28 05:20:05 2017]: IOHW #0. Setting output pin 3 LOW
+
+pfd2_test[Tue Nov 28 05:20:06 2017]: IOHW #0. Setting output pin 4 HIGH
+pfd2_test[Tue Nov 28 05:20:07 2017]: IOHW #0. Setting output pin 4 LOW
+
+pfd2_test[Tue Nov 28 05:20:08 2017]: IOHW #0. Setting output pin 5 HIGH
+pfd2_test[Tue Nov 28 05:20:09 2017]: IOHW #0. Setting output pin 5 LOW
+
+pfd2_test[Tue Nov 28 05:20:10 2017]: IOHW #0. Setting output pin 6 HIGH
+pfd2_test[Tue Nov 28 05:20:11 2017]: IOHW #0. Setting output pin 6 LOW
+
+pfd2_test[Tue Nov 28 05:20:12 2017]: IOHW #0. Setting output pin 7 HIGH
+pfd2_test[Tue Nov 28 05:20:13 2017]: IOHW #0. Setting output pin 7 LOW
+
+
+pfd2_test[Tue Nov 28 05:20:14 2017]: --- Read INPUT Pin. ---
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. Input 0 value: 1
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. Input 1 value: 1
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. Input 2 value: 1
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. Input 3 value: 1
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. Input 4 value: 1
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. Input 5 value: 1
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. Input 6 value: 1
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. Input 7 value: 1
+
+pfd2_test[Tue Nov 28 05:20:14 2017]: --- Enabled interrupt and test switch activity 8 times. ---
+pfd2_test[Tue Nov 28 05:20:14 2017]: IOHW #0. iteration:0 - Waiting for input (press any button on the PiFaceDigital)
+pfd2_test[Tue Nov 28 05:20:19 2017]: 8-Input Status Bits: 0xfe
+pfd2_test[Tue Nov 28 05:20:19 2017]: IOHW #0. iteration:1 - Waiting for input (press any button on the PiFaceDigital)
+pfd2_test[Tue Nov 28 05:20:19 2017]: 8-Input Status Bits: 0xff
+pfd2_test[Tue Nov 28 05:20:19 2017]: IOHW #0. iteration:2 - Waiting for input (press any button on the PiFaceDigital)
+pfd2_test[Tue Nov 28 05:20:19 2017]: 8-Input Status Bits: 0xff
+pfd2_test[Tue Nov 28 05:20:19 2017]: IOHW #0. iteration:3 - Waiting for input (press any button on the PiFaceDigital)
+pfd2_test[Tue Nov 28 05:20:19 2017]: 8-Input Status Bits: 0xff
+pfd2_test[Tue Nov 28 05:20:19 2017]: IOHW #0. iteration:4 - Waiting for input (press any button on the PiFaceDigital)
+pfd2_test[Tue Nov 28 05:20:20 2017]: 8-Input Status Bits: 0xfd
+pfd2_test[Tue Nov 28 05:20:20 2017]: IOHW #0. iteration:5 - Waiting for input (press any button on the PiFaceDigital)
+pfd2_test[Tue Nov 28 05:20:20 2017]: 8-Input Status Bits: 0xff
+pfd2_test[Tue Nov 28 05:20:20 2017]: IOHW #0. iteration:6 - Waiting for input (press any button on the PiFaceDigital)
+pfd2_test[Tue Nov 28 05:20:21 2017]: 8-Input Status Bits: 0xfb
+pfd2_test[Tue Nov 28 05:20:21 2017]: IOHW #0. iteration:7 - Waiting for input (press any button on the PiFaceDigital)
+pfd2_test[Tue Nov 28 05:20:21 2017]: 8-Input Status Bits: 0xff
+
+pfd2_test[Tue Nov 28 05:20:21 2017]: --- IOHW #0. Closing piface digital connection. ---
+pi@rpi_back:~/fourth $ 

@@ -1,0 +1,218 @@
+-- 2017 Dec 25 X'mas --
+-----------------------
+pi@rpi_back:~/fourth $ ./006_TS_Multicast 
+main[Tue Nov 28 02:29:25 2017]: default config file './data/cfg.txt' is used.
+
+main[Tue Nov 28 02:29:25 2017]: name=test_pf2.	tok_cfg_store[0].text = 0,		tok_cfg_store[0].value = 0.
+main[Tue Nov 28 02:29:25 2017]: name=num_pf2.	tok_cfg_store[1].text = 1,		tok_cfg_store[1].value = 1.
+main[Tue Nov 28 02:29:25 2017]: name=num_sensor_used.	tok_cfg_store[2].text = 8,		tok_cfg_store[2].value = 8.
+main[Tue Nov 28 02:29:25 2017]: name=num_emitter_used.	tok_cfg_store[3].text = 2,		tok_cfg_store[3].value = 2.
+main[Tue Nov 28 02:29:25 2017]: name=emitter_on_msec.	tok_cfg_store[4].text = 1000,		tok_cfg_store[4].value = 1000.
+main[Tue Nov 28 02:29:25 2017]: name=blink_period_nsec.	tok_cfg_store[5].text = 1000000,		tok_cfg_store[5].value = 1000000.
+main[Tue Nov 28 02:29:25 2017]: name=blink_led_flag.	tok_cfg_store[6].text = 1,		tok_cfg_store[6].value = 1.
+main[Tue Nov 28 02:29:25 2017]: name=emit_sensor_distance_mm.	tok_cfg_store[7].text = 1000,		tok_cfg_store[7].value = 1000.
+main[Tue Nov 28 02:29:25 2017]: name=dev_dev_distance_mm.	tok_cfg_store[8].text = 5,		tok_cfg_store[8].value = 5.
+main[Tue Nov 28 02:29:25 2017]: name=mcast_ip_addr.	tok_cfg_store[9].text = 224.0.0.1,		tok_cfg_store[9].value = 224.
+main[Tue Nov 28 02:29:25 2017]: name=mcast_ip_port.	tok_cfg_store[10].text = 16789,		tok_cfg_store[10].value = 16789.
+
+main[Tue Nov 28 02:29:25 2017]: setup Signal to handle Ctrl-C.
+main[Tue Nov 28 02:29:25 2017]: create_mcast_send_thread. exited. thread_id=1992520784
+mcast_send_thread[Tue Nov 28 02:29:25 2017]: Entered. thread ID=1992520784
+main[Tue Nov 28 02:29:25 2017]: run_sensor_thread() returns mcast_send_thread[Tue Nov 28 02:29:25 2017]: Multicast address=224.0.0.1, port=16789.
+0
+
+run_emit[Tue Nov 28 02:29:25 2017]: Starts emitter.
+run_emit[Tue Nov 28 02:29:25 2017]: num_pfd2:1, num_emitter:2mcast_send_thread[, num_sensors:8
+Tue Nov 28 02:29:25 2017run_emit[]: mq_getattr. mq_flags=0, mq_maxmsg=10, mq_msgsize=Tue Nov 28 02:29:25 20178192]: pifacedigital_open #, mq_curmsgs=00
+mcast_send_thread[
+Tue Nov 28 02:29:25 2017]: Entered loop.
+sensor_thread[Tue Nov 28 02:29:25 2017]: entered
+sensor_thread[Tue Nov 28 02:29:25 2017]: pifacedigital_open #0
+run_emit[Tue Nov 28 02:29:26 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:26 2017]: counter=1, pfd2_num=0, pin_num=0
+run_emit[Tue Nov 28 02:29:26 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+sensor_thread[Tue Nov 28 02:29:26 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #0 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 02:29:26 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #1 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 02:29:26 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #2 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 02:29:26 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #3 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 02:29:26 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #4 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 02:29:26 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #5 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 02:29:26 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #6 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 02:29:26 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #7 of pifacedigital2 #0 to OPEN.
+run_emit[Tue Nov 28 02:29:26 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:28 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 02:29:28 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:28 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 02:29:28 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:28 2017]: counter=2, pfd2_num=0, pin_num=1
+run_emit[Tue Nov 28 02:29:28 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 02:29:28 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:29 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 02:29:29 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:29 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 02:29:29 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:29 2017]: counter=3, pfd2_num=0, pin_num=0
+run_emit[Tue Nov 28 02:29:29 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 02:29:29 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+^Crun_emit[Tue Nov 28 02:29:30 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 02:29:30 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:30 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 02:29:30 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:30 2017]: counter=4, pfd2_num=0, pin_num=1
+run_emit[Tue Nov 28 02:29:30 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 02:29:30 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:31 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 02:29:31 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 02:29:31 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 02:29:31 2017]: before returning, released semaphore sync_emit_and_sensor
+run_emit[Tue Nov 28 02:29:31 2017]: pifacedigital_close #0
+sensor_thread[Tue Nov 28 02:29:31 2017]: done. released semaphore sync_emit_and_sensor
+sensor_thread[Tue Nov 28 02:29:31 2017]: pifacedigital_close #0
+sensor_thread[Tue Nov 28 02:29:31 2017]: left while loop.
+main[Tue Nov 28 02:29:31 2017]: sensor thread joined back OK.
+		Info:
+		raspberry: current_time=0x5a1d105b, Tue Nov 28 02:29:31 2017
+		raspberry type size: sizeof(int)=4, sizeof(time_t)=4, sizeof(int) + sizeof(time_t)=8
+to_mc_qu[Tue Nov 28 02:29:31 2017]: mq_getattr. mq_flags=0, mq_maxmsg=10, mq_msgsize=8192, mq_curmsgs=0
+to_mc_qu[Tue Nov 28 02:29:31 2017]: succeeded.
+mcast_test_message[Tue Nov 28 02:29:31 2017]: msg queued. OK.
+mcast_send_thread[Tue Nov 28 02:29:31 2017]: sendto() OK. byte received from qu=20, byte sent by sendto()=20
+mcast_send_thread[Tue Nov 28 02:29:31 2017]: exited. thread id=1992520784
+main[Tue Nov 28 02:29:31 2017]: mcast_send_thread joined. result=0, Success
+main[Tue Nov 28 02:29:31 2017]: semaphore destroyed.
+---------end------------
+pi@rpi_back:~/fourth $ 
+
+
+------------------------------
+-- 2017 Nov
+------------------------------
+hchan@hchan-ideapad-320:~$ cd /ProjC/workspaces-neon/raspberryPi3/proj_term/006_TS_Multicast/Release
+hchan@hchan-ideapad-320:/ProjC/workspaces-neon/raspberryPi3/proj_term/006_TS_Multicast/Release$ scp 006_TS_Multicast pi@192.168.1.239:/home/pi/fourth
+pi@192.168.1.239's password: 
+006_TS_Multicast                                                                                            100%   48KB  48.0KB/s   00:00    
+hchan@hchan-ideapad-320:/ProjC/workspaces-neon/raspberryPi3/proj_term/006_TS_Multicast/Release$ 
+
+
+
+hchan@hchan-ideapad-320:~$ ssh pi@192.168.1.239
+pi@192.168.1.239's password: 
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Nov 27 22:16:39 2017 from 192.168.1.65
+pi@rpi_back:~ $ cd fourth/
+pi@rpi_back:~/fourth $ ./006_TS_Multicast 
+
+
+main[Tue Nov 28 01:01:07 2017]: default config file './data/cfg.txt' is used.
+
+main[Tue Nov 28 01:01:07 2017]: name=test_pf2.....value=0.....Saved tok_cfg_value[0]=0
+main[Tue Nov 28 01:01:07 2017]: name=num_pf2.....value=1.....Saved tok_cfg_value[1]=1
+main[Tue Nov 28 01:01:07 2017]: name=num_sensor_used.....value=8.....Saved tok_cfg_value[2]=8
+main[Tue Nov 28 01:01:07 2017]: name=num_emitter_used.....value=2.....Saved tok_cfg_value[3]=2
+main[Tue Nov 28 01:01:07 2017]: name=emitter_on_msec.....value=1000.....Saved tok_cfg_value[4]=1000
+main[Tue Nov 28 01:01:07 2017]: name=blink_period_nsec.....value=1000000.....Saved tok_cfg_value[5]=1000000
+main[Tue Nov 28 01:01:07 2017]: name=blink_led_flag.....value=1.....Saved tok_cfg_value[6]=1
+main[Tue Nov 28 01:01:07 2017]: name=emit_sensor_distance_mm.....value=1000.....Saved tok_cfg_value[7]=1000
+main[Tue Nov 28 01:01:07 2017]: name=dev_dev_distance_mm.....value=5.....Saved tok_cfg_value[8]=5
+main[Tue Nov 28 01:01:07 2017]: name=mcast_ip_addr.....value=224.0.0.1.....Saved tok_cfg_value[9]=224
+main[Tue Nov 28 01:01:07 2017]: name=mcast_ip_port.....value=16789.....Saved tok_cfg_value[10]=16789
+
+main[Tue Nov 28 01:01:07 2017]: setup Signal to handle Ctrl-C.
+main[Tue Nov 28 01:01:07 2017]: create_mcast_send_thread. exited. thread_id=mcast_send_thread[1992070224
+Tue Nov 28 01:01:07 2017]: Entered. thread ID=1992070224
+mcast_send_thread[Tue Nov 28 01:01:07 2017]: mq_getattr. mq_flags=0, mq_maxmsg=10, mq_msgsize=8192, mq_curmsgs=0
+mcast_send_thread[Tue Nov 28 01:01:07 2017]: Entered loop.
+sensor_thread[Tue Nov 28 01:01:07 2017]: entered
+sensor_thread[main[Tue Nov 28 01:01:07 2017]: pifacedigital_open #0
+Tue Nov 28 01:01:07 2017]: run_sensor_thread() returns 0
+
+run_emit[Tue Nov 28 01:01:07 2017]: Starts emitter.
+run_emit[Tue Nov 28 01:01:07 2017]: num_pfd2:1, num_emitter:2, num_sensors:8
+run_emit[Tue Nov 28 01:01:07 2017]: pifacedigital_open #0
+run_emit[Tue Nov 28 01:01:08 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:08 2017]: counter=1, pfd2_num=0, pin_num=0
+run_emit[Tue Nov 28 01:01:08 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+sensor_thread[Tue Nov 28 01:01:08 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #0 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 01:01:08 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #1 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 01:01:08 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #2 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 01:01:08 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #3 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 01:01:08 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #4 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 01:01:08 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #5 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 01:01:08 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #6 of pifacedigital2 #0 to OPEN.
+sensor_thread[Tue Nov 28 01:01:08 2017]: Emitter pin#0 of pifacedigital2 #0 casuses sensor #7 of pifacedigital2 #0 to OPEN.
+run_emit[Tue Nov 28 01:01:08 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:10 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 01:01:10 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:10 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 01:01:10 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:10 2017]: counter=2, pfd2_num=0, pin_num=1
+run_emit[Tue Nov 28 01:01:10 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 01:01:10 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:11 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 01:01:11 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:11 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 01:01:11 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:11 2017]: counter=3, pfd2_num=0, pin_num=0
+run_emit[Tue Nov 28 01:01:11 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 01:01:11 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:12 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 01:01:12 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:12 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 01:01:12 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:12 2017]: counter=4, pfd2_num=0, pin_num=1
+run_emit[Tue Nov 28 01:01:12 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 01:01:12 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:14 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 01:01:14 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:14 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 01:01:14 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:14 2017]: counter=5, pfd2_num=0, pin_num=0
+run_emit[Tue Nov 28 01:01:14 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 01:01:14 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:15 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 01:01:15 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:15 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 01:01:15 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:15 2017]: counter=6, pfd2_num=0, pin_num=1
+run_emit[Tue Nov 28 01:01:15 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 01:01:15 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:16 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 01:01:16 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:16 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 01:01:16 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:16 2017]: counter=7, pfd2_num=0, pin_num=0
+run_emit[Tue Nov 28 01:01:16 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 01:01:16 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:17 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 01:01:17 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:17 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 01:01:17 2017]: led_on_duration_nsec=1000000000, working_nsec=1000000000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:17 2017]: counter=8, pfd2_num=0, pin_num=1
+run_emit[Tue Nov 28 01:01:17 2017]: released semaphore sync_emit_and_sensor for sensor to scan.
+run_emit[Tue Nov 28 01:01:17 2017]: Before blinking. working_nsec=999500000, max_blink=1000, blink_on_time_nsec=500000.
+^Crun_emit[Tue Nov 28 01:01:19 2017]: IR LED on time expired. goto wait for semaphore.
+run_emit[Tue Nov 28 01:01:19 2017]: After blinking. working_nsec=-500000, max_blink=1000, blink_on_time_nsec=500000.
+run_emit[Tue Nov 28 01:01:19 2017]: got semaphore sync_emit_and_sensor at the end of blinking ON cycle.
+run_emit[Tue Nov 28 01:01:19 2017]: before returning, released semaphore sync_emit_and_sensor
+run_emit[Tue Nov 28 01:01:19 2017]: pifacedigital_close #0
+sensor_thread[Tue Nov 28 01:01:19 2017]: done. released semaphore sync_emit_and_sensor
+sensor_thread[Tue Nov 28 01:01:19 2017]: pifacedigital_close #0
+sensor_thread[Tue Nov 28 01:01:19 2017]: left while loop.
+main[Tue Nov 28 01:01:19 2017]: sensor thread joined back OK.
+		current_time=0x5a1cfbaf, Tue Nov 28 01:01:19 2017
+		sizeof(int)=4, sizeof(time_t)=4, sizeof(int) + sizeof(time_t)=8
+to_mc_qu[Tue Nov 28 01:01:19 2017]: mq_getattr. mq_flags=0, mq_maxmsg=10, mq_msgsize=8192, mq_curmsgs=0
+to_mc_qu[Tue Nov 28 01:01:19 2017]: succeeded.
+mcast_test_message[Tue Nov 28 01:01:19 2017]: msg queued. OK.
+mcast_send_thread[Tue Nov 28 01:01:19 2017]: sendto() OK. byte received from qu=20, byte sent by sendto()=20
+mcast_send_thread[Tue Nov 28 01:01:19 2017]: exited. thread id=1992070224
+main[Tue Nov 28 01:01:19 2017]: mcast_send_thread joined. result=0, Success
+main[Tue Nov 28 01:01:19 2017]: semaphore destroyed.
+---------end------------
+pi@rpi_back:~/fourth $ 

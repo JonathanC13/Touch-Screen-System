@@ -1,0 +1,67 @@
+hchan@ideapad-320:/ProjC/workspaces-neon/desktop/test/mcast_rec/Debug$ ./mcast_rec 
+main[Fri Jan  5 13:05:49 2018]: default config file './data/cfg.txt' is used.
+
+main[Fri Jan  5 13:05:49 2018]: open file named './data/cfg.txt' failed. exit.
+
+
+
+.....Entering into recvfrom loop for mcast messages.....
+.....Ctrl-C to break.....
+sizeof(float)=4, sizeof(int)=4, sizeof(time_t)=8.
+Multicast Receive from 192.168.1.239[48141] -> 80 00 00 00 00 00 00 00 4f 44 1d 5a a7 f9 31 41 61 e0 b1 41 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff fe ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+bytecount = 0x00000080
+HEADER = 0x00000000
+TIME_T = Tue Nov 28 06:11:11 2017
+
+X_INTERCEPT = 11.12345, Y_INTERCEPT = 22.23456
+
+IR0_SENSOR_ST = 0xffffffff
+IR1_SENSOR_ST = 0xffffffff
+IR2_SENSOR_ST = 0xffffffff
+IR3_SENSOR_ST = 0xffffffff
+IR4_SENSOR_ST = 0xffffffff
+IR5_SENSOR_ST = 0xffffffff
+IR6_SENSOR_ST = 0xffffffff
+IR7_SENSOR_ST = 0xfffffffe
+
+-----------------------------
+
+^C
+
+
+
+
+
+
+
+hchan@hchan-ideapad-320:/ProjC/workspaces-neon/desktop/test/mcast_rec/Release$ ./mcast_rec 
+
+
+.....Entering into recvfrom loop for mcast messages.........Ctrl-C to break...
+sizeof(float)=4, sizeof(int)=4, sizeof(time_t)=8.
+Multicast Receive from 192.168.1.239[59696] -> 10 00 00 00 91 fa 1c 5a 00 00 00 00 36 cd 8f 3f 75 1f 16 40 
+Tue Nov 28 00:56:33 2017
+ x_float=1.12345, y_float=2.34567
+
+Multicast Receive from 192.168.1.239[59696] -> 10 00 00 00 92 fa 1c 5a 00 00 00 00 36 cd 8f 3f 75 1f 16 40 
+Tue Nov 28 00:56:34 2017
+ x_float=1.12345, y_float=2.34567
+
+Multicast Receive from 192.168.1.239[59696] -> 10 00 00 00 94 fa 1c 5a 00 00 00 00 36 cd 8f 3f 75 1f 16 40 
+Tue Nov 28 00:56:36 2017
+ x_float=1.12345, y_float=2.34567
+
+Multicast Receive from 192.168.1.239[59696] -> 10 00 00 00 95 fa 1c 5a 00 00 00 00 36 cd 8f 3f 75 1f 16 40 
+Tue Nov 28 00:56:37 2017
+ x_float=1.12345, y_float=2.34567
+
+Multicast Receive from 192.168.1.239[59696] -> 10 00 00 00 96 fa 1c 5a 00 00 00 00 36 cd 8f 3f 75 1f 16 40 
+Tue Nov 28 00:56:38 2017
+ x_float=1.12345, y_float=2.34567
+
+Multicast Receive from 192.168.1.239[59696] -> 10 00 00 00 99 fa 1c 5a 00 00 00 00 36 cd 8f 3f 75 1f 16 40 
+Tue Nov 28 00:56:41 2017
+ x_float=1.12345, y_float=2.34567
+
+^C
+hchan@hchan-ideapad-320:/ProjC/workspaces-neon/desktop/test/mcast_rec/Release$ 

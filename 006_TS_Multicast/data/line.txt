@@ -1,0 +1,21 @@
+Mon Nov 27 03:50:12 2017
+y_distance=1000.00000, device_spacing=5.00000
+
+valid_line_paras, vertical_line, slope_m, intercept_at_y, intercept_at_x
+-------------------------------------------------------------------------------------------
+  1,	  1,	0.00000,	0.00000,	0.00000.	vertical line.	[led=0,sensor=0].
+  1,	  0,	200.00000,	-0.00000,	0.00000.	slanted line.	[led=0,sensor=1].
+  1,	  0,	100.00000,	-0.00000,	0.00000.	slanted line.	[led=0,sensor=2].
+  1,	  0,	66.66666,	-0.00000,	0.00000.	slanted line.	[led=0,sensor=3].
+  1,	  0,	50.00000,	-0.00000,	0.00000.	slanted line.	[led=0,sensor=4].
+  1,	  0,	40.00000,	-0.00000,	0.00000.	slanted line.	[led=0,sensor=5].
+  1,	  0,	33.33333,	-0.00000,	0.00000.	slanted line.	[led=0,sensor=6].
+  1,	  0,	28.57143,	-0.00000,	0.00000.	slanted line.	[led=0,sensor=7].
+  1,	  0,	-200.00000,	1000.00000,	5.00000.	slanted line.	[led=1,sensor=0].
+  1,	  1,	0.00000,	0.00000,	5.00000.	vertical line.	[led=1,sensor=1].
+  1,	  0,	200.00000,	-1000.00000,	5.00000.	slanted line.	[led=1,sensor=2].
+  1,	  0,	100.00000,	-500.00000,	5.00000.	slanted line.	[led=1,sensor=3].
+  1,	  0,	66.66666,	-333.33331,	5.00000.	slanted line.	[led=1,sensor=4].
+  1,	  0,	50.00000,	-250.00000,	5.00000.	slanted line.	[led=1,sensor=5].
+  1,	  0,	40.00000,	-200.00000,	5.00000.	slanted line.	[led=1,sensor=6].
+  1,	  0,	33.33333,	-166.66666,	5.00000.	slanted line.	[led=1,sensor=7].

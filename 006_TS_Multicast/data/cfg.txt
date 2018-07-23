@@ -1,0 +1,11 @@
+test_pf2=0                      //if it is 1, test the pifacedigitasl2, and will not run the application. Else, run the application only.
+num_pf2=1                       //number of pifacedigital2 connected to the RPi.
+num_sensor_used=8               //# of sensor/input will be scanned. first input is the first input point of the pifacedigital address 0. Then sequentially goes up.
+num_emitter_used=2              //# of IR LED emitters will be energized. first output is the first output point of the pifacedigital address 0. Then sequentially goes up.
+emitter_on_msec=1000            //emitter on time before it is turned off. MUST be less tha 2000ms
+blink_period_nsec=1000000       //ir led blinking period. even nunber only to have 50% duty cycle
+blink_led_flag=1                //0=solid on. 1=blink ir led
+emit_sensor_distance_mm=1000    //	
+dev_dev_distance_mm=5           //distance between two IR LEDs, distance between two detectors 
+mcast_ip_addr=224.0.0.1
+mcast_ip_port=16789
