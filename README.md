@@ -17,14 +17,14 @@ Video demo for presentation: https://www.youtube.com/watch?v=uheqU3PMgto
 
 # End Remark
 
-    The project was successful, grade wise and functionality, and I'm thankful for our supervisor for his support and my teammates' dedication to leading their systems through the whole 9 yards of development. My component's minimum viable product was missing a driver to select the co-ordinates on the Raspberry pi and looking back it's funny how bootleg my touch screen was.
-    
-    Thank you
-    
-    Dr. Chung-Horng Lung, Project supervisor
-    
-    Cyrus Sadeghi-Emamchaie - Web server and iOS Client
-    Eliab Woldeyes - Android Client
-    
-    Sincerely,
-      Jonathan
+The project was successful, grade wise and functionality, and I'm thankful for our supervisor for his support and my teammates' dedication to leading their systems through the whole 9 yards of development. My component's minimum viable product was missing a driver to select the co-ordinates on the Raspberry pi and looking back it's funny how bootleg my touch screen was.
+
+Thank you
+
+Dr. Chung-Horng Lung, Project supervisor
+
+Cyrus Sadeghi-Emamchaie - Web server and iOS Client
+Eliab Woldeyes - Android Client
+
+Sincerely,
+  Jonathan
