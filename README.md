@@ -26,5 +26,5 @@ Video demo for presentation: https://www.youtube.com/watch?v=uheqU3PMgto
     Cyrus Sadeghi-Emamchaie - Web server and iOS Client
     Eliab Woldeyes - Android Client
     
-    Sincerly,
+    Sincerely,
       Jonathan
