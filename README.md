@@ -21,7 +21,7 @@ The project was successful, grade wise and functionality, and I'm thankful for o
 
 Thank you
 
-Dr. Chung-Horng Lung, Project supervisor
+Dr. Chung-Horng Lung - Project supervisor
 
 Cyrus Sadeghi-Emamchaie - Web server and iOS Client <br/>
 Eliab Woldeyes - Android Client <br/>
