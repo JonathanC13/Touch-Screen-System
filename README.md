@@ -5,7 +5,7 @@ https://github.com/JonathanC13/Touch-Screen-System
 
 # Media
 
-Low quality video demo: https://www.youtube.com/watch?v=uheqU3PMgto
+Video demo for presentation: https://www.youtube.com/watch?v=uheqU3PMgto
 
 # Description
 
