@@ -6,9 +6,6 @@ https://github.com/JonathanC13/Touch-Screen-System
 # Media
 
 Video demo for presentation: https://www.youtube.com/watch?v=uheqU3PMgto
-<a href="https://www.youtube.com/watch?v=uheqU3PMgto
-" target="_blank"><img src="https://www.youtube.com/watch?v=uheqU3PMgto/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 # Description
 
@@ -30,4 +27,4 @@ Cyrus Sadeghi-Emamchaie - Web server and iOS Client <br/>
 Eliab Woldeyes - Android Client <br/>
 
 Sincerely, <br/>
-  Jonathan
+&nbsp;&nbsp;&nbsp;&nbsp;Jonathan
